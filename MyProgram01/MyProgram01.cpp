@@ -3,25 +3,20 @@ using namespace std;
 
 int main()
 {
-    int x = 10;
-    int y = 5;
+    int number1, number2;
+    int result;
+    //input    
 
-    cout << "X = " << x << " Y = " << y << "\n\n";
-    
-    x += y; //x = x + y;
-    cout << "X = " << x << endl;
+    cout << "Input your number1: ";
+    cin >> number1;
+    cout << "Input your number2: ";
+    cin >> number2;
 
-    x -= y; //x = x - y;
-    cout << "X = " << x << endl;
+    //process
+    result = number1 + number2;
 
-    x *= y; //x = x * y;
-    cout << "X = " << x << endl;
-
-    x /= y; //x = x / y;
-    cout << "X = " << x << endl;
-
-    x %= y; //x = x % y;
-    cout << "X = " << x << endl;
+    //output
+    cout << "Result = " << result << "\n";
 
 }
 
