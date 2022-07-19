@@ -1,2 +1,3 @@
 ﻿  MyProgram01.cpp
+C:\Learn C and C++\CPP\MyProgram01\MyProgram01\MyProgram01.cpp(6,28): warning C4305: 'initializing': truncation from 'double' to 'float'
   MyProgram01.vcxproj -> C:\Learn C and C++\CPP\MyProgram01\x64\Debug\MyProgram01.exe
