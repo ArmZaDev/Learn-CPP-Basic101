@@ -3,14 +3,25 @@ using namespace std;
 
 int main()
 {
-    //Arithmetic operators
+    int x = 10;
+    int y = 5;
 
-    int a = 10, b = 3;
+    cout << "X = " << x << " Y = " << y << "\n\n";
+    
+    x += y; //x = x + y;
+    cout << "X = " << x << endl;
 
-    cout << a << " + " << b << " = " << a + b << endl;
-    cout << a << " - " << b << " = " << a - b << endl;
-    cout << a << " * " << b << " = " << a * b << endl;
-    cout << a << " / " << b << " = " << a / b << endl;
-    cout << a << " % " << b << " = " << a % b << endl;
+    x -= y; //x = x - y;
+    cout << "X = " << x << endl;
+
+    x *= y; //x = x * y;
+    cout << "X = " << x << endl;
+
+    x /= y; //x = x / y;
+    cout << "X = " << x << endl;
+
+    x %= y; //x = x % y;
+    cout << "X = " << x << endl;
+
 }
 
