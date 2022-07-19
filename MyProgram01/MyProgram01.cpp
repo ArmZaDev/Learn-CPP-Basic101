@@ -1,9 +1,13 @@
-#include <iostream>
+﻿#include <iostream>
 using namespace std;
 
 int main()
 {
-    cout << "Hello World!\n";   
-    cout << "Hello Unreal Engine\n";
+    cout << "Tasukete!\n"; //แสดงข้อความ
+    /*
+        เริ่มต้นเรียน C++ อีกครั้ง
+        19/07/2565
+    */
+    
 }
 
