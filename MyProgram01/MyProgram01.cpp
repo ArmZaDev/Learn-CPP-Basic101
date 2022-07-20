@@ -3,56 +3,54 @@ using namespace std;
 
 int main()
 {
-    // gender (male, female), age (integer)
-    string gender;
+    string name;
     string status;
-    int age;
+    int score;
+    char grade;
+    //input    
 
-    //input
-    cout << "Input your gender: ";
-    cin >> gender;
-    cout << "Input your age: ";
-    cin >> age;
+    cout << "Input student name: ";
+    cin >> name;
+    cout << "Input score (0-100): ";
+    cin >> score;
 
     //output
     cout << "-----Description-----" << "\n";
-    cout << "Your Gender: " << gender << "\n";
-    cout << "Your Age: " << age << "\n";
+    cout << "Student: " << name << "\n";
+    cout << "Score: " << score << "\n";
 
-    /*
-    if (gender == "male" && age >= 20)
+    if (score >= 80 && score >= 100)
     {
-        status = "Pass Interview";
+        grade = 'A';
+        cout << "Grade = " << grade << "\n";
+    }
+    else if (score >= 70 && score <= 79)
+    {
+        grade = 'B';
+        cout << "Grade = " << grade << "\n";
+    }
+    else if (score >= 60 && score <= 69)
+    {
+        grade = 'C';
+        cout << "Grade = " << grade << "\n";
+    }
+    else if (score >= 50 && score <= 59)
+    {
+        grade = 'D';
+        cout << "Grade = " << grade << "\n";
+    }
+    else if(score >=0 && score <= 49)
+    {
+        grade = 'F';
+        cout << "Grade = " << grade << "\n";
     }
     else
     {
-        status = "Not Pass";
+        grade = 'N';
+        cout << "Grade = " << grade << "\n";
+        cout << "Input Error! Try again." << "\n";
     }
-    cout << status << "\n";
-    */
     
-    
-    if (gender == "male" || gender == "female" && age >= 20) //female OR male
-    {
-        status = "Pass Interview";
-    }
-    else
-    {
-        status = "Not Pass";
-    }
-    cout << status << "\n";
-
-    /*
-    if (!(gender == "male"))
-    {
-        status = "Pass Interview";
-    }
-    else
-    {
-        status = "Not Pass";
-    }
-    cout << status << "\n";
-    */
     
 }
 
