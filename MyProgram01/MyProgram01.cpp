@@ -3,24 +3,21 @@ using namespace std;
 
 int main()
 {
-    int count = 1;
-    
-    do
-    {
-        cout << "Count = " << count << "\n";
-        count++;
-    } while (count <= 0);
-
-    cout << "Complete Program" << endl;
+    for (int i = 1; i <= 5; i++) {
+        cout << "Peaky fookin blinders" << "\n";
+    }
 
     /*
-    bool isConnect = false;
+    int number = 0;
 
-    do {
-        cout << "Downloading File Form Internet..." << "\n";
+    cout << "Input number: ";
+    cin >> number;
 
-    } while (isConnect);
-    cout << "End Program";
+    for (int i = 1; i <= 12; i++) {
+        cout << number << " X " << i << " = " << number * i << "\n";
+    }
+    cout << "End Program" << endl;
     */
+    
 }
 
