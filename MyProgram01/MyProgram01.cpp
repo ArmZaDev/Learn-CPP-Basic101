@@ -4,41 +4,32 @@ using namespace std;
 int main()
 {
     
-    int service = 0;
-    cout << "intput service number (1-2): ";
-    cin >> service;
+    int count = 1;
+    int round = 0;
 
-    switch (service)
+    cout << "Input your round: ";
+    cin >> round;
+
+    while (count <= round)
     {
-        case 1:
-            cout << "Create New Bank Account!";
-            break;
-        case 2:
-            cout << "Withdraw and Deposite";
-            break;
-        default:
-            cout << "invalid Choice";
-            break;
+        //cout << "Peaky fookin blinders" << "\n";
+        cout << count << "\n";
+        count++;
     }
-    
+    cout << "-----End Program-----" << endl;
+   
     /*
-    char confirm;
-    cout << "Do you want to exit program (y/n): ";
-    cin >> confirm;
+    int count = 1;
+    int number = 0;
 
-    switch (confirm) 
-    {
-        case 'y':
-            cout << "Exit Program";
-            break;
-        case 'n':
-            cout << "Cancel";
-            break;
-        default:
-            cout << "Unkown";
-            break;
+    cout << "Input number: ";
+    cin >> number;
+
+    while (count <= 12) {
+        cout << number << " X " << count << " = " << number * count << "\n";
+        count++;
     }
+    cout << "Complete Program" << endl;
     */
-
 }
 
