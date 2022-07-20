@@ -3,20 +3,38 @@ using namespace std;
 
 int main()
 {
-    int number1, number2;
-    int result;
+    string name;
+    string status;
+    int score;
     //input    
 
-    cout << "Input your number1: ";
-    cin >> number1;
-    cout << "Input your number2: ";
-    cin >> number2;
-
-    //process
-    result = number1 + number2;
+    cout << "Input student name: ";
+    cin >> name;
+    cout << "Input score: ";
+    cin >> score;
 
     //output
-    cout << "Result = " << result << "\n";
+    cout << "-----Description-----" << "\n";
+    cout << "Student: " << name << "\n";
+    cout << "Score: " << score << "\n";
+
+    // score >= 50 => pass exam // score < 50 => not pass
+    if (score >= 50) 
+    {
+        status = "Pass Exam";
+        //cout << "Pass Exam" << "\n";
+    }
+    else
+    {
+        status = "Not Pass";   
+        //cout << "Not Pass" << "\n";
+    }
+    cout << "Satus: " << status << "\n";
+    
+    
+
+    
+
 
 }
 
