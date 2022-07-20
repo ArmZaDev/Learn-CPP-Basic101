@@ -3,44 +3,56 @@ using namespace std;
 
 int main()
 {
-    string name;
+    // gender (male, female), age (integer)
+    string gender;
     string status;
-    int score;
-    char grade;
-    //input    
+    int age;
 
-    cout << "Input student name: ";
-    cin >> name;
-    cout << "Input score: ";
-    cin >> score;
+    //input
+    cout << "Input your gender: ";
+    cin >> gender;
+    cout << "Input your age: ";
+    cin >> age;
 
     //output
     cout << "-----Description-----" << "\n";
-    cout << "Student: " << name << "\n";
-    cout << "Score: " << score << "\n";
+    cout << "Your Gender: " << gender << "\n";
+    cout << "Your Age: " << age << "\n";
 
-    if (score >= 80)
+    /*
+    if (gender == "male" && age >= 20)
     {
-        grade = 'A';
-    }
-    else if(score >= 70)
-    {
-        grade = 'B';
-    }
-    else if (score >= 60)
-    {
-        grade = 'C';
-    }
-    else if (score >= 50)
-    {
-        grade = 'D';
+        status = "Pass Interview";
     }
     else
     {
-        grade = 'F';
+        status = "Not Pass";
     }
-    cout << "Grade = " << grade << "\n";
+    cout << status << "\n";
+    */
+    
+    
+    if (gender == "male" || gender == "female" && age >= 20) //female OR male
+    {
+        status = "Pass Interview";
+    }
+    else
+    {
+        status = "Not Pass";
+    }
+    cout << status << "\n";
 
-     
+    /*
+    if (!(gender == "male"))
+    {
+        status = "Pass Interview";
+    }
+    else
+    {
+        status = "Not Pass";
+    }
+    cout << status << "\n";
+    */
+    
 }
 
