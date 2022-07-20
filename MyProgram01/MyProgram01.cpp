@@ -3,32 +3,42 @@ using namespace std;
 
 int main()
 {
-    int amount = 0;
-    cout << "Input your amount: ";
-    cin >> amount;
-    cout << "Amount = " << amount << "\n";
+    
+    int service = 0;
+    cout << "intput service number (1-2): ";
+    cin >> service;
 
-    if (amount >= 15000)
+    switch (service)
     {
-        cout << "You have discount";
-        if(amount == 15000)
-        {
-            cout << " 10%" << "\n";
-        }
-        else if (amount == 20000)
-        {
-            cout << " 20%" << "\n";
-        }
-        else 
-        {
-            cout << " 50%" << "\n";
-        }
-        
-    }
-    else
-    {
-        cout << "You don't have discount";
+        case 1:
+            cout << "Create New Bank Account!";
+            break;
+        case 2:
+            cout << "Withdraw and Deposite";
+            break;
+        default:
+            cout << "invalid Choice";
+            break;
     }
     
+    /*
+    char confirm;
+    cout << "Do you want to exit program (y/n): ";
+    cin >> confirm;
+
+    switch (confirm) 
+    {
+        case 'y':
+            cout << "Exit Program";
+            break;
+        case 'n':
+            cout << "Cancel";
+            break;
+        default:
+            cout << "Unkown";
+            break;
+    }
+    */
+
 }
 
