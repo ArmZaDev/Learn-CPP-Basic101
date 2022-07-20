@@ -3,42 +3,24 @@ using namespace std;
 
 int main()
 {
+    int count = 1;
     
-    int service = 0;
-    cout << "intput service number (1-2): ";
-    cin >> service;
-
-    switch (service)
+    do
     {
-        case 1:
-            cout << "Create New Bank Account!";
-            break;
-        case 2:
-            cout << "Withdraw and Deposite";
-            break;
-        default:
-            cout << "invalid Choice";
-            break;
-    }
-    
+        cout << "Count = " << count << "\n";
+        count++;
+    } while (count <= 0);
+
+    cout << "Complete Program" << endl;
+
     /*
-    char confirm;
-    cout << "Do you want to exit program (y/n): ";
-    cin >> confirm;
+    bool isConnect = false;
 
-    switch (confirm) 
-    {
-        case 'y':
-            cout << "Exit Program";
-            break;
-        case 'n':
-            cout << "Cancel";
-            break;
-        default:
-            cout << "Unkown";
-            break;
-    }
+    do {
+        cout << "Downloading File Form Internet..." << "\n";
+
+    } while (isConnect);
+    cout << "End Program";
     */
-
 }
 
