@@ -18,18 +18,11 @@ int main()
     cout << "Student: " << name << "\n";
     cout << "Score: " << score << "\n";
 
-    // score >= 50 => pass exam // score < 50 => not pass
-    if (score >= 50) 
-    {
-        status = "Pass Exam";
-        //cout << "Pass Exam" << "\n";
-    }
-    else
-    {
-        status = "Not Pass";   
-        //cout << "Not Pass" << "\n";
-    }
-    cout << "Satus: " << status << "\n";
+    // Ternary Operator
+    status = (score >= 50) ? "Pass Exam" : "Not Pass";
+
+    cout << "Status = " << status << "\n";
+
     
     
 
